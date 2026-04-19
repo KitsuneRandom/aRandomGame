@@ -8,7 +8,6 @@
 [node name="Grid" parent="." unique_id=1281578257 instance=ExtResource("1_paxxb")]
 
 [node name="TheCat" parent="Grid" unique_id=1873555885 instance=ExtResource("2_paxxb")]
-position = Vector2(16, 16)
 
 [node name="Camera2D" type="Camera2D" parent="Grid/TheCat" unique_id=390514105]
 zoom = Vector2(2, 2)

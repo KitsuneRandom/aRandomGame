@@ -5,3 +5,4 @@
 [node name="TheGame" type="Node" unique_id=325271684]
 
 [node name="Map" parent="." unique_id=2131599707 instance=ExtResource("1_cltob")]
+position = Vector2(-2, -1)

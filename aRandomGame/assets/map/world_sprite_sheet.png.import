@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxa05p60koy68"
-path="res://.godot/imported/tilemapDesert.png-6df33f6114d32b200ef5529924f0dd8f.ctex"
+uid="uid://4tvjcy86xeaw"
+path="res://.godot/imported/world_sprite_sheet.png-15a4f3da752c5b9f0be31c56400f1bec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map/desert_zone/tilemapDesert.png"
-dest_files=["res://.godot/imported/tilemapDesert.png-6df33f6114d32b200ef5529924f0dd8f.ctex"]
+source_file="res://assets/map/world_sprite_sheet.png"
+dest_files=["res://.godot/imported/world_sprite_sheet.png-15a4f3da752c5b9f0be31c56400f1bec.ctex"]
 
 [params]
 

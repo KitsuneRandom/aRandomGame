@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://brnfirmgfii2x"]
+[gd_scene format=3 uid="uid://bn5vbu65sk57b"]
 
 [ext_resource type="Script" uid="uid://bgoyacjaomqu4" path="res://scripts/the_cat.gd" id="1_b8b3k"]
 [ext_resource type="Texture2D" uid="uid://d14dkwlnhndp2" path="res://assets/main_character/cat_sprite_sheet.png" id="2_fsu0a"]

@@ -42,5 +42,4 @@ func _physics_process(delta: float) -> void:
 func move(dir : Vector2):
 	movement_tween= create_tween()
 	movement_tween.set_trans(Tween.TRANS_QUAD)
-	movement_tween.tween_property(self,"position",self.global_position+dir*tile_size,move_speed)
-	# movement_tween.finished.connect(return)
+	movement_tween.tween_property(self,"global_position",self.global_position+dir*tile_size,move_speed)

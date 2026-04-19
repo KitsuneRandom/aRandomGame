@@ -62,8 +62,10 @@ animations = [{
 script = ExtResource("1_b8b3k")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=690563645]
+position = Vector2(0, -11)
 sprite_frames = SubResource("SpriteFrames_dd0j1")
 animation = &"walk"
+frame_progress = 0.56555194
 
 [node name="Collision" type="CollisionPolygon2D" parent="." unique_id=551135723]
 polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)

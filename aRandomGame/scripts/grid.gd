@@ -44,7 +44,7 @@ const tile_origin : Dictionary ={
 }
 
 func set_visual_layers(tilemap : TileMapLayer,limite1 : Vector2i , limite2 : Vector2i):
-	var tile : Vector2i = limite1
+	var tile : Vector2i = limite1	
 	while tile.x<=limite2.x:
 		tile.y=limite1.y
 		while tile.y<=limite2.y:
@@ -85,11 +85,13 @@ func sort_neighbour(neighbours : Array[String]) -> Dictionary:
 func _ready() -> void:
 	background.visible=false
 	over.visible=false
-	var limite1_test = Vector2i(-5,-7)
-	var limite2_test = Vector2i(11,6)
-	set_visual_layers(background,limite1_test,limite2_test)
-	set_visual_layers(over,limite1_test,limite2_test)
+	load_zone(Vector2(-400,-250),Vector2(400,250))
 
+func load_zone(limite_coord1 : Vector2, limite_coord2 : Vector2):
+	var limite1 : Vector2i = limite_coord1/32
+	var limite2 : Vector2i = limite_coord2/32
+	set_visual_layers(background,limite1,limite2)
+	set_visual_layers(over,limite1,limite2)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

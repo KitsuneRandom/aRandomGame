@@ -83,12 +83,13 @@ func sort_neighbour(neighbours : Array[String]) -> Dictionary:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	background.visible=false
+	over.visible=false
+	var limite1_test = Vector2i(-5,-7)
+	var limite2_test = Vector2i(11,6)
+	set_visual_layers(background,limite1_test,limite2_test)
+	set_visual_layers(over,limite1_test,limite2_test)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var limite1_test = Vector2i(-5,-7)
-	var limite2_test = Vector2i(11,6)
-	if Input.is_action_just_pressed("ui_accept"):
-		set_visual_layers(background,limite1_test,limite2_test)
-		set_visual_layers(over,limite1_test,limite2_test)
+	pass

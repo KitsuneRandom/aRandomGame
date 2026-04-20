@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://e35j0521mcgm"]
 
 [ext_resource type="TileSet" uid="uid://be226e2wbsqxd" path="res://assets/map/tilemaps/textures.tres" id="2_2s7k2"]
-[ext_resource type="Script" uid="uid://bik372vhbboh6" path="res://scripts/grid.gd" id="2_gnlqp"]
+[ext_resource type="Script" uid="uid://bik372vhbboh6" path="res://scripts/map/grid.gd" id="2_gnlqp"]
 [ext_resource type="TileSet" uid="uid://r1uw1djrfyed" path="res://assets/map/tilemaps/grid.tres" id="3_gnlqp"]
 
 [node name="Grid" type="Node2D" unique_id=1281578257]

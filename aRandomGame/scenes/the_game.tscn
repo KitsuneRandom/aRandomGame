@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cd0dp0xh0xqmv"]
 
-[ext_resource type="PackedScene" uid="uid://dyuy6wn0xs5k4" path="res://scenes/map.tscn" id="1_cltob"]
-[ext_resource type="PackedScene" uid="uid://bn5vbu65sk57b" path="res://scenes/the_cat.tscn" id="2_v8ewd"]
+[ext_resource type="PackedScene" uid="uid://dyuy6wn0xs5k4" path="res://scenes/map/map.tscn" id="1_cltob"]
+[ext_resource type="PackedScene" uid="uid://bn5vbu65sk57b" path="res://scenes/main_character/the_cat.tscn" id="2_v8ewd"]
 
 [node name="TheGame" type="Node" unique_id=325271684]
 

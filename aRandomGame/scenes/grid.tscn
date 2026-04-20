@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://e35j0521mcgm"]
+
+[ext_resource type="TileSet" uid="uid://be226e2wbsqxd" path="res://assets/map/tilemaps/textures.tres" id="2_2s7k2"]
+[ext_resource type="Script" uid="uid://bik372vhbboh6" path="res://scripts/grid.gd" id="2_gnlqp"]
+[ext_resource type="TileSet" uid="uid://r1uw1djrfyed" path="res://assets/map/tilemaps/grid.tres" id="3_gnlqp"]
+
+[node name="Grid" type="Node2D" unique_id=1281578257]
+script = ExtResource("2_gnlqp")
+
+[node name="Background" type="TileMapLayer" parent="." unique_id=123658116]
+tile_set = ExtResource("3_gnlqp")
+
+[node name="Over" type="TileMapLayer" parent="." unique_id=1778262911]
+tile_set = ExtResource("3_gnlqp")
+
+[node name="VisualTileMap" type="TileMap" parent="." unique_id=382152759]
+position = Vector2(16, 16)
+rendering_quadrant_size = 32
+format = 2
+
+[node name="VisualLayer0" type="TileMapLayer" parent="VisualTileMap" unique_id=942786296]
+tile_set = ExtResource("2_2s7k2")
+rendering_quadrant_size = 32
+
+[node name="VisualLayer1" type="TileMapLayer" parent="VisualTileMap" unique_id=845319496]
+tile_set = ExtResource("2_2s7k2")
+rendering_quadrant_size = 32
+
+[node name="VisualLayer2" type="TileMapLayer" parent="VisualTileMap" unique_id=961614375]
+tile_set = ExtResource("2_2s7k2")
+rendering_quadrant_size = 32
+
+[node name="VisualLayer3" type="TileMapLayer" parent="VisualTileMap" unique_id=657348131]
+tile_set = ExtResource("2_2s7k2")
+rendering_quadrant_size = 32
+
+[node name="VisualLayer4" type="TileMapLayer" parent="VisualTileMap" unique_id=1753399699]
+tile_set = ExtResource("2_2s7k2")
+rendering_quadrant_size = 32

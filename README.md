@@ -2,7 +2,7 @@
 
 ## Origine
 
-L'idée originale a été lancée par [KitsuneRandom](github.com/KitsuneRandom) en tant que projet personnel. Il a ensuite été repris par [Vøid Étoile](github.com/Void-Etoile-studio).
+L'idée originale a été lancée par [KitsuneRandom](https://github.com/KitsuneRandom) en tant que projet personnel. Il a ensuite été repris par [Vøid Étoile](https://github.com/Void-Etoile-studio).
 
 ## Description
 

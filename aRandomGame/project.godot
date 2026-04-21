@@ -11,9 +11,21 @@ config_version=5
 [application]
 
 config/name="aRandomGame"
+config/version="0.1.0"
 run/main_scene="uid://cd0dp0xh0xqmv"
+config/quit_on_go_back=false
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://c0rew6qi3x76h"
+
+[display]
+
+window/size/mode=3
+window/size/borderless=true
+window/stretch/mode="viewport"
+
+[editor]
+
+naming/script_name_casing=2
 
 [input]
 

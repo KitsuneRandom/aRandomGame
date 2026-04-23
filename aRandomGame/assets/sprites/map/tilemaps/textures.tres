@@ -1,0 +1,68 @@
+[gd_resource type="TileSet" format=3 uid="uid://be226e2wbsqxd"]
+
+[ext_resource type="Texture2D" uid="uid://bqye2bleqtade" path="res://assets/sprites/map/desert_zone/tilemap_path.png" id="1_16lo1"]
+[ext_resource type="Texture2D" uid="uid://i5bmgcgrlpwk" path="res://assets/sprites/map/desert_zone/tilemap_sand.png" id="2_8rce3"]
+[ext_resource type="Texture2D" uid="uid://cpp72qmvylqqb" path="res://assets/sprites/map/desert_zone/tilemap_water.png" id="3_ct8hi"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1fgh1"]
+texture = ExtResource("1_16lo1")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_unanf"]
+texture = ExtResource("2_8rce3")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j4oe7"]
+texture = ExtResource("3_ct8hi")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/1 = SubResource("TileSetAtlasSource_1fgh1")
+sources/2 = SubResource("TileSetAtlasSource_unanf")
+sources/3 = SubResource("TileSetAtlasSource_j4oe7")

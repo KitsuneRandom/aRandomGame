@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cd0dp0xh0xqmv"]
+
+[ext_resource type="PackedScene" uid="uid://dyuy6wn0xs5k4" path="res://scenes/game/map/map.tscn" id="1_cltob"]
+[ext_resource type="PackedScene" uid="uid://bn5vbu65sk57b" path="res://scenes/game/main_character/the_cat.tscn" id="2_v8ewd"]
+
+[node name="TheGame" type="Node" unique_id=325271684]
+
+[node name="Map" parent="." unique_id=2131599707 instance=ExtResource("1_cltob")]
+position = Vector2(-2, -1)
+
+[node name="TheCat" parent="Map" unique_id=1873555885 instance=ExtResource("2_v8ewd")]
+position = Vector2(16, 16)
+
+[node name="Camera2D" type="Camera2D" parent="Map/TheCat" unique_id=2084344935]
+zoom = Vector2(1.5, 1.5)

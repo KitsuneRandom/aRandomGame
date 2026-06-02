@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://dsxau8t0g3rwi"]
+
+[ext_resource type="Texture2D" uid="uid://dbqbrqxcm1pcj" path="res://assets/OBEY.png" id="1_o248v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o248v"]
+bg_color = Color(0.38230667, 0.2968, 0.53, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hkoq7"]
+bg_color = Color(0.42258665, 0.3604, 0.53, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rb7a0"]
+bg_color = Color(0.38230667, 0.2968, 0.53, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye7p4"]
+bg_color = Color(0.47629333, 0.4452, 0.53, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_103vo"]
+bg_color = Color(0, 1, 0, 0.46600002)
+
+[node name="home_menu" type="Control" unique_id=581097775]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1961817295]
+modulate = Color(0.09275348, 0.22739631, 0.35760656, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_o248v")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2141461764]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=162989574]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=428532690]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+
+[node name="btn_continue" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=814238642]
+custom_minimum_size = Vector2(350, 73)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_o248v")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hkoq7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rb7a0")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ye7p4")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rb7a0")
+text = "Continuer"
+autowrap_mode = 3
+
+[node name="btn_new" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=174582283]
+custom_minimum_size = Vector2(350, 73)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_o248v")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hkoq7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rb7a0")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ye7p4")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rb7a0")
+text = "Nouvelle partie"
+
+[node name="btn_params" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1185840847]
+custom_minimum_size = Vector2(350, 73)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_o248v")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hkoq7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rb7a0")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ye7p4")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rb7a0")
+text = "Paramètres"
+
+[node name="btn_credit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1129215829]
+custom_minimum_size = Vector2(350, 73)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_o248v")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hkoq7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rb7a0")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ye7p4")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rb7a0")
+text = "Crédits"
+
+[node name="btn_quit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1956286929]
+custom_minimum_size = Vector2(350, 73)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_o248v")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hkoq7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rb7a0")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ye7p4")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rb7a0")
+text = "Quitter"
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/HBoxContainer" unique_id=1898613022]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_103vo")
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=1241732192]
+layout_mode = 2
+texture = ExtResource("1_o248v")
+expand_mode = 2
+stretch_mode = 5

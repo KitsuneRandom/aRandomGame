@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://dl2h6xb87sbpt"]
+
+[ext_resource type="Texture2D" uid="uid://dbqbrqxcm1pcj" path="res://assets/OBEY.png" id="1_14yeg"]
+[ext_resource type="Texture2D" uid="uid://bh3d7sm05mdc5" path="res://assets/sprites/main_character/cat_walking_right1.png" id="2_7pahx"]
+[ext_resource type="Texture2D" uid="uid://c7wq56ah3iq6r" path="res://assets/sprites/main_character/cat_walking_right2.png" id="3_lq2dg"]
+[ext_resource type="Texture2D" uid="uid://dh1jfhevo1xy6" path="res://assets/sprites/main_character/cat_walking_right3.png" id="4_gsq8i"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_v6wk5"]
+frames = 3
+frame_0/texture = ExtResource("2_7pahx")
+frame_0/duration = 0.2
+frame_1/texture = ExtResource("3_lq2dg")
+frame_1/duration = 0.2
+frame_2/texture = ExtResource("4_gsq8i")
+frame_2/duration = 0.2
+
+[node name="loading_screen" type="CanvasLayer" unique_id=1017826010]
+
+[node name="Control" type="Control" parent="." unique_id=1012393626]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=259787021]
+modulate = Color(0.16924527, 0.1692453, 0.16924527, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_14yeg")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=2137911642]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -118.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=282937457]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = -5
+
+[node name="TextureRect2" type="TextureRect" parent="Control/MarginContainer/VBoxContainer" unique_id=165035190]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = SubResource("AnimatedTexture_v6wk5")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Control/MarginContainer/VBoxContainer" unique_id=273104405]
+layout_mode = 2
+text = "Loading..."
+horizontal_alignment = 1
+vertical_alignment = 1

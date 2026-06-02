@@ -2,9 +2,9 @@ extends Node
 
 # La scène main sert de scène de base dès le démarrage du jeu.
 # Elle lancera d'abord une scène main_menu puis gèrera le changement vers the_game
-@onready var game : PackedScene = preload("res://scenes/game/the_game.tscn")
+@onready var loading_screen : PackedScene = preload("res://scenes/menus/load_screen/loading_screen.tscn")
 
 func _ready() -> void:
-	# à déplacer plus tard ⬇️
-	var game_instance = game.instantiate()
-	add_child(game_instance)
+	var load_instance = loading_screen.instantiate()
+	add_child(load_instance)
+	load_instance.load_scene("res://scenes/menus/main_menu/home_menu.tscn")

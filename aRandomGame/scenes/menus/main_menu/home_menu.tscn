@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dsxau8t0g3rwi"]
 
+[ext_resource type="Script" uid="uid://d4fqa7ydk2frd" path="res://src/menus/main_menu/home_menu.gd" id="1_103vo"]
 [ext_resource type="Texture2D" uid="uid://dbqbrqxcm1pcj" path="res://assets/OBEY.png" id="1_o248v"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o248v"]
@@ -34,6 +35,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_103vo")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1961817295]
 modulate = Color(0.09275348, 0.22739631, 0.35760656, 1)
@@ -133,3 +135,9 @@ layout_mode = 2
 texture = ExtResource("1_o248v")
 expand_mode = 2
 stretch_mode = 5
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/btn_continue" to="." method="_on_btn_continue_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/btn_new" to="." method="_on_btn_new_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/btn_params" to="." method="_on_btn_params_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/btn_credit" to="." method="_on_btn_credit_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/btn_quit" to="." method="_on_btn_quit_pressed"]

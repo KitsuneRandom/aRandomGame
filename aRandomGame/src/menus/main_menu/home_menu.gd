@@ -14,8 +14,9 @@ func _on_btn_continue_pressed() -> void:
 
 func _on_btn_new_pressed() -> void:
 	var load_instance = loading_screen.instantiate()
-	add_child(load_instance)
+	get_parent().add_child(load_instance)
 	load_instance.load_scene("res://scenes/game/the_game.tscn")
+	queue_free()
 
 func _on_btn_params_pressed() -> void:
 	pass # Replace with function body.

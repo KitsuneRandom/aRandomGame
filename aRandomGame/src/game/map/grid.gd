@@ -38,9 +38,11 @@ const tile_shape : Dictionary = {
 
 #Association des noms des types de terrains avec leurs sources dans "texture"
 const tile_origin : Dictionary ={
-	"Path" : 1,
+	"placeholder1" : 0,
+	"placeholder2" : 1,
 	"Sand" : 2,
-	"Water" : 3
+	"Water" : 3,
+	"Path" : 4,
 }
 
 func set_visual_layers(tilemap : TileMapLayer,limite1 : Vector2i , limite2 : Vector2i):
@@ -54,22 +56,24 @@ func set_visual_layers(tilemap : TileMapLayer,limite1 : Vector2i , limite2 : Vec
 
 func set_tile(tilemap : TileMapLayer,tile_coord : Vector2i):
 	var num_layer : int = 0
+	var placeholder : int =0
 	if tilemap!=background:
 		num_layer+=1
+		placeholder=1
 	
 	var neighbours=get_neighbours(tilemap,tile_coord)
 	var sorted_neighbours : Dictionary =sort_neighbour(neighbours)
 	
 	for n in sorted_neighbours:
 		var active_layer : TileMapLayer = visual_tile_map.get_child(num_layer)
-		active_layer.set_cell(tile_coord,tile_origin.get(n,1),tile_shape.get(sorted_neighbours.get(n)))
+		active_layer.set_cell(tile_coord,tile_origin.get(n,placeholder),tile_shape.get(sorted_neighbours.get(n)))
 		num_layer+=1
 
 func get_neighbours(tilemap : TileMapLayer,tile_coord : Vector2i) -> Array[String]:
 	var neighbour : Array[String]=[]
 	for y in range(2):
 		for x in range(2):
-			print(tile_type.get(tilemap.get_cell_atlas_coords(tile_coord+Vector2i(x,y))))
+			#print(tile_type.get(tilemap.get_cell_atlas_coords(tile_coord+Vector2i(x,y))))
 			neighbour.insert(x+y*2,tile_type.get(tilemap.get_cell_atlas_coords(tile_coord+Vector2i(x,y)),"Null")) 
 	return neighbour
 	
